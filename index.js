@@ -2,7 +2,7 @@
 
 let osoba1 = {
   jmeno: 'Alena',
-  uspory: 5300
+  uspory: 53000
 };
 let osoba2 = {
   jmeno: 'Karolína',
@@ -14,7 +14,7 @@ const vyletHavaj = (osoba1, osoba2) => {
     if (osoba1.uspory >= 50000 && osoba2.uspory >= 50000) {
       return `Kamarádky mají dohromady alespoň 100000 Kč, každá má alespoň 50 000 Kč, a můžou jet na Havaj.`;
     } else if (osoba1.uspory < 50000) {
-      return `Kamarádky majídohromady alespoň 100000 Kč, ale ${osoba1.jmeno} má pouze ${osoba1.uspory} Kč, tudíž bude dlužit kamarádce ${(50000 - osoba1.uspory)} Kč, na Havaj holky odjet můžou.`;
+      return `Kamarádky mají dohromady alespoň 100000 Kč, ale ${osoba1.jmeno} má pouze ${osoba1.uspory} Kč, tudíž bude dlužit kamarádce ${(50000 - osoba1.uspory)} Kč, na Havaj holky odjet můžou.`;
     } else {
       return `Kamarádky mají dohromady alespoň 100000 Kč, ale ${osoba2.jmeno} má pouze ${osoba2.uspory} Kč, tudíž bude dlužit kamarádce ${(50000 - osoba2.uspory)} Kč, na Havaj holky odjet můžou.`;
     }
